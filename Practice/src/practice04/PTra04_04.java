@@ -9,6 +9,8 @@ package practice04;
 public class PTra04_04 {
 	public static void main(String[] args) {
 		// 入力型プログラムです。
+
+		
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 

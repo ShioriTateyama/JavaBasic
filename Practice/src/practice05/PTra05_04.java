@@ -23,9 +23,10 @@ public class PTra05_04 {
 		 */
 
 		// ①
-		System.out.println("0～6の整数を入力してください");
+			System.out.println("0～6の整数を入力してください");
 
-		String line = scanner.nextLine();
+
+			String line = scanner.nextLine();
 
 		switch(line) {
 			case "0":
@@ -33,6 +34,27 @@ public class PTra05_04 {
 				break;
 			case "1":
 				System.out.println("月曜");
+				break;
+			case "2":
+				System.out.println("曜");
+				break;
+			case "3":
+				System.out.println("水曜");
+				break;
+			case "4":
+				System.out.println("木曜");
+				break;
+			case "5":
+				System.out.println("金曜");
+				break;
+			case "6":
+				System.out.println("土曜");
+				break;
+			default:
+				System.out.println("0～6の整数を入力してください");
+
 		}
-	}
+
+		}
+
 }
