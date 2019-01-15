@@ -20,7 +20,7 @@ public class PTra04_01 {
 
 			// ★ 変数numを2乗した数を変数numに代入してください
 		   num=num*num;
-		   }
+		 }
 
 
 			// ★ 変数numの値を出力してください
