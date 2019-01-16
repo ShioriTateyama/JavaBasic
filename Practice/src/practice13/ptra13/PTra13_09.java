@@ -6,6 +6,8 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Employee;
+
 public class PTra13_09 {
 
 	/*
@@ -34,6 +36,11 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
+		Employee e1 = new Employee();
+		
+		
+		practice13.common.Employee e2 = new practice13.common.Employee();
+		practice13.common.Employee e3 = new practice13.common.Employee();
 
 	}
 }
