@@ -48,10 +48,27 @@ public class PTra10_05 {
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
-		car.run();
+		int sum=0;  //走った距離の合計
+		int count=0; //runメソッドを実行した回数
+		while(true) {           //Car.javaでは繰り返されないので繰り返しをする
 
+			int run = car.run();    //戻り値を設定した
+			count++;  //一回ずつ実行されることを＋１で設定
 
+			if(run==-1) {
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}
+			sum +=run;
+			System.out.println(sum);
 
+			if (sum>distance) {
+				System.out.println("目的地にまで" + count +"時間かかりました。残りのガソリンは、"+ car.gasoline +"リットルです");
+				break;
+			}
+
+		}
+		//gasolineはrunメソッドのなかですでに−１ずづなるようになっている
 
 
 
