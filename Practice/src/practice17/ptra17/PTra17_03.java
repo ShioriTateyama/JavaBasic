@@ -12,8 +12,11 @@ import practice17.common.ThrowExceptionUtil;
 
 public class PTra17_03 {
 	public static void main(String[] args) {
-		quiz();
+
+			quiz();
+
 	}
+
 
 	public static void quiz() {
 		final String[] question = {
@@ -27,6 +30,8 @@ public class PTra17_03 {
 
 		System.out.println("クイズを始めます");
 
+
+
 		/*
 		 * ここから、例外処理を含めたプログラムになっています。
 		 *
@@ -35,25 +40,33 @@ public class PTra17_03 {
 		 * から再度入力を求めるような形に仕様変更してください。
 		 *
 		 */
-		try {
-			for (int i = 0; i < question.length; i++) {
-				System.out.println("問題：" + (i + 1));
-				System.out.println(question[i]);
 
-				System.out.println("回答を数字で入力してください");
-				String input = ThrowExceptionUtil.inputValue();
+		for (int i = 0; i < question.length; i++) {
+			System.out.println("問題：" + (i + 1));
+			System.out.println(question[i]);
 
-				int num = Integer.parseInt(input);
+			while (true) {
+				try {
 
-				if (answer[i] == num) {
-					score++;
+					System.out.println("回答を数字で入力してください");
+					String input = ThrowExceptionUtil.inputValue();
+
+					int num = Integer.parseInt(input);
+
+					if (answer[i] == num) {
+						score++;
+					}
+					break;   //breakされるまでwhile文の中で繰り返される
+				} catch (IOException e) {
+					System.out.println("例外が発生しました");
+
+				} catch (NumberFormatException e) {
+					System.out.println("数字以外が入力されました");
 				}
 			}
-		} catch(IOException e) {
-			System.out.println("例外が発生しました");
-		} catch(NumberFormatException e) {
-			System.out.println("数字以外が入力されました");
 		}
+
+
 
 		System.out.println("全ての問題が終わりました。");
 		System.out.println("あなたの得点は・・・" + score + "点です！");
