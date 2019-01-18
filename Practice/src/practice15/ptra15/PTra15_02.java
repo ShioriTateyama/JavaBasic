@@ -13,16 +13,16 @@ public class PTra15_02 {
 	public static void main(String[] args) {
 
 		Room room = new Java2Month();
-	
-		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
-		
-		 ((Java2Month)room).getCurriculum();//キャスト演算子
-		
-		
 
+		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
+		String[] curriculum;
+		curriculum=((Java2Month)room).getCurriculum();//キャスト演算子
+
+
+		for(int i=0;i<curriculum.length;i++)
 		// 取得したカリキュラム情報を全て出力してください
-			System.out.println (((Java2Month)room).getCurriculum());
-			
+			System.out.println (curriculum[i]);
+
 		}
 }
 
