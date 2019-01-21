@@ -20,17 +20,14 @@ public class PTra06_06 {
 		 * ■■■■□
 		 */
 
-		for(int k=1; k<6; k++)
-			{
-			for(int i=1; i<=k-1; i++)
-				{
+		for(int k=1; k<6; k++){
+			for(int i=1; i<=k-1; i++){
 				System.out.print("■");
-				}
+			}
 
-			for(int s=1; s<=6-k; s++)
-				{
+			for(int s=1; s<=6-k; s++){
 				System.out.print("□");
-				}
+			}
 
 		System.out.println();
 

@@ -44,26 +44,48 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
-			if (cpuHand == 0&&myHand==2) {
+			if (cpuHand == 0) {
 				System.out.println("グー！");
-				break;
+				if(myHand==2) {
+					System.out.println("you win!");
+					winFlg = true;
+				}else if (myHand==1){
+					System.out.println("you lose!もう１回");
+				}else if(myHand==0) {
+					System.out.println("あいこ！もう一回");
+				}else {
+					System.out.println("判定不可。もう一回");
+				}
 
 
 
-			} else if (cpuHand == 1&&myHand==0) {
-				System.out.println("チョキ！！");
-				break;
-
-
-
-			} else if(cpuHand ==2 &&myHand==1){
-				System.out.println("パー！！");
-				break;
-
-
-
+			}else if (cpuHand == 1) {
+				System.out.println("チョキ！");
+				if(myHand==0) {
+					System.out.println("you win!");
+					winFlg = true;
+				}else if (myHand==2){
+					System.out.println("you lose!もう１回");
+				}else if(myHand==1) {
+					System.out.println("あいこ！もう一回");
+				}else {
+					System.out.println("判定不可。もう一回");
 			}
 
+
+			} else {
+				System.out.println("パー！！");
+				if(myHand==1) {
+					System.out.println("you win!");
+					winFlg = true;
+				}else if (myHand==0){
+					System.out.println("you lose!もう１回");
+				}else if(myHand==2) {
+					System.out.println("あいこ！もう一回");
+				}else {
+					System.out.println("判定不可。もう一回");
+				}
+			}
 		}
 	}
 }

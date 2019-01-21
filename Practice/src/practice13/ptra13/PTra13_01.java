@@ -15,16 +15,16 @@ public class PTra13_01 extends practice13.common.Animal{
 	public static void main(String[] args) {
 
 		// ★ PTra13_01をインスタンス化をしてください
-		PTra13_01 name= new PTra13_01() ;
+		PTra13_01 ptra= new PTra13_01() ;
 
 		// ★ PTra13_01の持つsetterを実行してください（引数："人"）
-		name.setName("人");
+		ptra.setName("人");
 
 		// ★ PTra13_01の持つインスタンスメソッドrunとbreathを実行してしてください
-		PTra13_01 run=new PTra13_01();
-		name.run();
-		PTra13_01 breath=new PTra13_01();
-		name.breath();
+		
+		ptra.run();
+		
+		ptra.breath();
 
 
 

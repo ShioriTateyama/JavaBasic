@@ -21,10 +21,11 @@ public class PTra02_10 {
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください(少数部分は切り捨て)
 		 * ※ プログラムは何行書いても良いです
 		 */
-		double tax = 1.08;
+		
 		int sum1 = (coffee * 2) + snack;
-		double sum2 = Math.floor(sum1 * tax);
-		int SUM2 = (int)sum2;
+		double total = 1.08*sum1;
+		
+		int SUM2 = (int)total;
 	    System.out.println(moneyInHand - SUM2 + "円");
 
 	}

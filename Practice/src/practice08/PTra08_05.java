@@ -39,7 +39,7 @@ public class PTra08_05 {
 		case 2:
 			System.out.println(triangle(width, height));
 			break;
-
+		
 
 		}
 

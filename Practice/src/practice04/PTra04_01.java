@@ -14,21 +14,22 @@ public class PTra04_01 {
 
 
 		// ★ 条件式に、変数numが100を超えた場合にfalseになるような条件を記述してください
-		while (num<100) {
+		while (num<=100) {
 		
 
 
 			// ★ 変数numを2乗した数を変数numに代入してください
 		   num=num*num;
-		 }
+		 
 
 
 			// ★ 変数numの値を出力してください
 		System.out.println(num);
+		}
 
 
 		System.out.println("プログラムを終了します");
 
-}
 	}
+}
 
